@@ -4,12 +4,12 @@ const dictionary = ["у", "е", "ы", "а", "о", "э", "я", "и", "ю", "ё"];
 getVowels = (args) => {
   const newArr = makeArr(args.toLowerCase()); // возвращает новый массив
   let vowels = [];
-for (const i in newArr) {
-    if (dictionary.includes(newArr[i]) == true) { // проверка что строка из словаря такое же как в новом массиве
-        vowels.push(newArr[i]); // если истина - добавить строку в массив.
-    }
-}
-return vowels;
+  for (const i in newArr) {
+      if (dictionary.includes(newArr[i])) { // проверка что строка из словаря такое же как в новом массиве
+          vowels.push(newArr[i]); // если истина - добавить строку в массив.
+      }
+  }
+  return vowels;
 };
 
 makeArr = (args) => {

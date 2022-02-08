@@ -1,6 +1,6 @@
 const path = "/users/download/index.html"
 
-isHtml = (args) => {
+const isHtml = (args) => {
     return args.endsWith(".html")
 }
 
